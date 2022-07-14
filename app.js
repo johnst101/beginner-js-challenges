@@ -64,5 +64,36 @@ return element !== 0;
 console.log(isNotZero(5));
 
 // Q10: Calculate the Remainder
+function calcRemainder(num6, num7) {
+  return num6 % num7;
+}
 
-// Q11:
+console.log(calcRemainder(4, 2));
+
+// Q11: Is the number odd?
+function isOdd(num8) {
+  return num8 % 2 !== 0;
+}
+
+console.log(isOdd(1));
+
+// Q12: If a number is even, return 1 otherwise return -1
+function booleanInteger(num9) {
+  return num9 % 2 !== 0 ? -1 : 1
+}
+
+console.log(booleanInteger(1))
+
+// Q13: Check if a user is logged in AND subscribed
+function isLoggedInAndSubscribed(loggedIn, subs) {
+  return (loggedIn === 'LOGGED_IN') && (subs === 'SUBSCRIBED')
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+
+// Q14: Check if a user is logged in OR subscribed
+function isLoggedInOrSubscribed(logged, sub) {
+  return (logged === 'LOGGED_IN') || (sub === 'SUBSCRIBED')
+}
+
+console.log(isLoggedInOrSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
